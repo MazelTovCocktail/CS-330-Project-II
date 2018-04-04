@@ -30,6 +30,40 @@ int divide(int m, int n)
 	return division;
 }
 
+int oddOreven(int x) 
+{
+	int oddEvenResult = 0;
+	if(x % 2 == 0){
+		cout << "The number is even.";
+	}
+
+	else {
+		cout << "The number is odd.";
+	}
+	return oddEvenResult;
+}
+
+int primeCheck(int x, int i) {
+	int primeResult = 0;
+	bool isPrime = true;
+
+	for (i = 2; i <= x / 2; ++i)
+	{
+		if (x % i == 0)
+		{
+			isPrime = false;
+			break;
+		}
+	}
+	if (isPrime) {
+		cout << "This is a prime number";
+	}
+	else {
+		cout << "This is not a prime number";
+	}
+	return primeResult;
+}
+
 void main()
 {
 	int x, y;
@@ -41,6 +75,8 @@ void main()
 	cout << "Please press - for subtraction" <<endl;
 	cout << "Please press * for multiplication" <<endl;
 	cout << "Please press / for division" <<endl;
+	cout << "Please press 1 to check odd or even for x." << endl;
+	cout << "Please press 2 to check odd or even for x." << endl;
 	char choice;
 	cout << "Please enter your choice of operation: ";
 	cin >> choice;
@@ -52,6 +88,10 @@ void main()
 		mult(x, y);
 	else if (choice == '/')
 		divide(x, y);
+	else if (choice == '1')
+		oddOreven(x);
+	else if (choice == '2')
+		primeCheck(x, y);
 
 	cin.get();
 	cin.clear();
