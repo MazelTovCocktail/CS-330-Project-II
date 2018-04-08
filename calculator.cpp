@@ -135,8 +135,13 @@ float mult(double a, double b) //Prashan
 float divide(double m, double n) //Prashan
 {
 	float division;
-	division = (float)m / n;
-	return division;
+	if (n == 0) {
+		return NAN;
+	}
+	else {
+		division = (float)m / n;
+		return division;
+	}
 }
 
 /*@param a the first operanr
@@ -145,7 +150,12 @@ float divide(double m, double n) //Prashan
 @post returns the modulo of a and b*/
 float mod(double a, double b) //Prashan
 {
-	return fmod(a, b);
+	if (b == 0) {
+		return NAN;
+	}
+	else {
+		return fmod(a, b);
+	}
 }
 
 /*@param x the operand to check for odd
