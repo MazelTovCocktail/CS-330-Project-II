@@ -110,7 +110,7 @@ float add(double a, double b)
 @param b the second operand
 @pre None
 @post returns the difference of a and b*/
-float sub(double a, double b) //Prashan
+float sub(double a, double b) 
 {
 	double difference;
 	difference = a - b;
@@ -121,7 +121,7 @@ float sub(double a, double b) //Prashan
 @param b the second operand
 @pre None
 @post returns the product of a and b*/
-float mult(double a, double b) //Prashan
+float mult(double a, double b) 
 {
 	double product;
 	product = a * b;
@@ -132,7 +132,7 @@ float mult(double a, double b) //Prashan
 @param b the second operand
 @pre None
 @post returns the quotient of a and b*/
-float divide(double m, double n) //Prashan
+float divide(double m, double n) 
 {
 	float division;
 	if (n == 0) {
@@ -148,7 +148,7 @@ float divide(double m, double n) //Prashan
 @param b the second operand
 @pre None
 @post returns the modulo of a and b*/
-float mod(double a, double b) //Prashan
+float mod(double a, double b) 
 {
 	if (b == 0) {
 		return NAN;
@@ -161,7 +161,7 @@ float mod(double a, double b) //Prashan
 /*@param x the operand to check for odd
 @pre None
 @post returns whether the operand is odd or even*/
-bool isOdd(int x) //Prashan
+bool isOdd(int x) 
 {
 	if (x % 2 == 0) {
 		return false;
