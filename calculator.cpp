@@ -203,6 +203,10 @@ bool isPrime(int x)
 			break;
 		}
 	}
+
+	if (x < 2) {
+		prime = false;
+	}
 	return prime;
 }
 
