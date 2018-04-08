@@ -13,6 +13,10 @@ using namespace std;
 
 enum Options { NIL, ADD, SUB, MULT, DIV, MOD, PRIME, EVEN, ODD, HELP, QUIT };
 
+
+/*
+@pre None
+@post displays the welcome message*/
 void welcomeMessage()
 {
 	cout << "\t┌───────────────────────────────────────┐\n"
@@ -29,6 +33,9 @@ void welcomeMessage()
 		"\t└───────────────────────────────────────┘\n";
 }
 
+/*
+@pre None
+@post displays the main menu*/
 void displayMenu() 
 {
 	cout << "\t\t┌──────────────────────┐\n"
@@ -47,6 +54,9 @@ void displayMenu()
 		"\t\t└────┴─────────────────┘\n";
 }
 
+/*
+@pre None
+@post displays helpful tips to use the calculator*/
 void getHelp() 
 {
 	cout << "   ┌───────────────────────────────────────────────────┐\n"
@@ -71,6 +81,9 @@ void getHelp()
 		"   └───────────────────────────────────────────────────┘\n";
 }
 
+/*
+@pre None
+@post displays the Good-bye message*/
 void quitMessage() 
 {
 	cout << "\t\t┌──────────────────────┐\n"
@@ -78,6 +91,9 @@ void quitMessage()
 		"\t\t└──────────────────────┘\n";
 }
 
+/*
+@pre None
+@post returns the input for further processing*/
 float getInput() 
 {
 	int tries = 0;
@@ -190,6 +206,8 @@ bool isPrime(int x)
 	return prime;
 }
 
+/*
+@post Processes the calculator and makes required funtional calls */
 int main()
 {
 	welcomeMessage();
