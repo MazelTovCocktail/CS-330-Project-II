@@ -113,8 +113,8 @@ float getInput()
 
 /*@param a the first operand
 @param b the second operand
-@pre None
-@post returns the sum of a and b*/
+@pre parameters must be integers or float types
+@post returns the result of a and b as a float type*/
 float add(double a, double b)
 {
 	float sum;
@@ -124,8 +124,8 @@ float add(double a, double b)
 
 /*@param a the first operand
 @param b the second operand
-@pre None
-@post returns the difference of a and b*/
+@pre parameters must be integers or float types
+@post returns the difference of a and b as a float type */
 float sub(double a, double b) 
 {
 	double difference;
@@ -135,8 +135,8 @@ float sub(double a, double b)
 
 /*@param a the first operand
 @param b the second operand
-@pre None
-@post returns the product of a and b*/
+@pre parameters must be integers or float types
+@post returns the result of a and b as a float type*/
 float mult(double a, double b) 
 {
 	double product;
@@ -146,8 +146,9 @@ float mult(double a, double b)
 
 /*@param a the first operanr
 @param b the second operand
-@pre None
-@post returns the quotient of a and b*/
+@pre parameters must be integers or float types
+@post returns the result of a and b as a float type
+    May return NAN if second operand is 0*/
 float divide(double m, double n) 
 {
 	float division;
@@ -162,8 +163,9 @@ float divide(double m, double n)
 
 /*@param a the first operanr
 @param b the second operand
-@pre None
-@post returns the modulo of a and b*/
+@pre parameters must be integers or float types
+@post returns the result of a and b as a float type
+        May return NAN if second operand is 0*/
 float mod(double a, double b) 
 {
 	if (b == 0) {
@@ -175,8 +177,8 @@ float mod(double a, double b)
 }
 
 /*@param x the operand to check for odd
-@pre None
-@post returns whether the operand is odd or even*/
+@pre parameter must be an integer.
+post: return value must is a boolean value true if param is odd, else true.*/
 bool isOdd(int x) 
 {
 	if (x % 2 == 0) {
@@ -189,8 +191,8 @@ bool isOdd(int x)
 }
 
 /*@param x the operand to check for prime
-@pre None
-@post returns whether the operand is prime. True if prime, false if not*/
+@pre parameter must be an integer
+@post returns bool value whether the operand is prime. True if prime, false if not*/
 bool isPrime(int x)
 {
 	bool prime = true;
